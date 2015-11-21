@@ -1,0 +1,16 @@
+buildscript {
+
+	configurations.all {
+		resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+	}
+
+	repositories {
+		maven {
+			url new File(rootDir, 'repository').toURL()
+		}
+	}
+
+	dependencies {
+		classpath group: 'com.carguntonn', name: 'test-suite-plugin', version: '1.0.0-SNAPSHOT', changing: true
+	}
+}

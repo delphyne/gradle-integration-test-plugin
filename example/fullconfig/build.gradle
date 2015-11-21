@@ -1,0 +1,11 @@
+//apply plugin: 'test-suite'
+//
+//testSuites {
+//	integration {
+//		failBuild = true
+//		seperateSourceSet = true
+//	}
+//	security {
+//		seperateSourceSet = true
+//	}
+//}
